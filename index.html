@@ -18,13 +18,26 @@
   <title>2023 Awards</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
       background-color: black;
-      color: white; /* Text color (optional, to make text more readable on a dark background) */
+      color: white;
+    }
+
+    #full-screen-image {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center center;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   </style>
 </head>
 <body>
-<img src="./main.png">
+<img id="full-screen-image" src="./main.png" alt="Full Screen Image">
 <!--<ul>-->
 <!--  <li><a href="page1.html">바른생활상 조윤진</a></li>-->
 <!--  <li><a href="page2.html">일복만땅상 김지윤</a></li>-->
