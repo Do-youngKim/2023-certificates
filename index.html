@@ -2,14 +2,14 @@
 <html lang="en">
 <style>
   body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
   }
   img {
-    width: 100%; /* Make the image take 100% of the container's width */
-    height: auto; /* Maintain the aspect ratio of the image */
-    display: block; /* Remove any extra spacing below the image */
-    max-width: 100%; /* Ensure the image does not exceed its natural size */
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
   }
 </style>
 <head>
@@ -26,6 +26,7 @@
     }
 
     #full-screen-image {
+      pointer-events: none;
       width: 100vw;
       height: 100vh;
       object-fit: cover;
@@ -34,18 +35,64 @@
       top: 0;
       left: 0;
     }
+
+    #jiyoon {
+      pointer-events: auto;
+      cursor: pointer;
+      position: absolute;
+      width: 30vw;
+      height: 30vh;
+      top: 50%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    #yoonjin {
+      pointer-events: auto;
+      cursor: pointer;
+      position: absolute;
+      width: 30vw;
+      height: 30vh;
+      top: 50%;
+      left: 65%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    #minji {
+      pointer-events: auto;
+      cursor: pointer;
+      position: absolute;
+      width: 30vw;
+      height: 30vh;
+      top: 80%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
   </style>
 </head>
 <body>
+<div id="jiyoon">
+</div>
+<div id="yoonjin">
+</div>
+<div id="minji">
+</div>
 <img id="full-screen-image" src="./main.png" alt="Full Screen Image">
-<!--<ul>-->
-<!--  <li><a href="page1.html">바른생활상 조윤진</a></li>-->
-<!--  <li><a href="page2.html">일복만땅상 김지윤</a></li>-->
-<!--  <li><a href="page3.html">상 김민지</a></li>-->
-<!--  <li><a href="page4.html">모범직장인상 김민재</a></li>-->
-<!--  <li><a href="page5.html">상 김진경</a></li>-->
 
-<!--  &lt;!&ndash; Add more pages as needed &ndash;&gt;-->
-<!--</ul>-->
 </body>
 </html>
+
+<script>
+  document.getElementById('jiyoon').addEventListener('click', function() {
+    window.location.href = 'page2.html';
+  });
+  document.getElementById('yoonjin').addEventListener('click', function() {
+    window.location.href = 'page1.html';
+  });
+  document.getElementById('minji').addEventListener('click', function() {
+    window.location.href = 'page3.html';
+  });
+</script>
