@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+  }
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023 Awards</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: black;
+      color: white;
+    }
+
+    #full-screen-image {
+      pointer-events: none;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center center;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    #eddy {
+      pointer-events: auto;
+      cursor: pointer;
+      position: absolute;
+      width: 30vw;
+      height: 30vh;
+      top: 50%;
+      left: 23%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    #loopy {
+      pointer-events: auto;
+      cursor: pointer;
+      position: absolute;
+      width: 25vw;
+      height: 30vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    #petty {
+      pointer-events: auto;
+      cursor: pointer;
+      position: absolute;
+      width: 25vw;
+      height: 30vh;
+      top: 50%;
+      left: 77%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    #pororo {
+      pointer-events: auto;
+      cursor: pointer;
+      position: absolute;
+      width: 30vw;
+      height: 30vh;
+      top: 80%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    #poby {
+      pointer-events: auto;
+      cursor: pointer;
+      position: absolute;
+      width: 30vw;
+      height: 30vh;
+      top: 80%;
+      left: 65%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div id="eddy">
+</div>
+<div id="loopy">
+</div>
+<div id="petty">
+</div>
+<div id="pororo">
+</div>
+<div id="poby">
+</div>
+<img id="full-screen-image" src="assets/teamPororo-main.png" alt="Full Screen Image">
+
+</body>
+</html>
+
+<script>
+  document.getElementById('eddy').addEventListener('click', function() {
+    window.location.href = 'eddy.html';
+  });
+  document.getElementById('loopy').addEventListener('click', function() {
+    window.location.href = 'loopy.html';
+  });
+  document.getElementById('petty').addEventListener('click', function() {
+    window.location.href = 'petty.html';
+  });
+  document.getElementById('pororo').addEventListener('click', function() {
+    window.location.href = 'pororo.html';
+  });
+  document.getElementById('poby').addEventListener('click', function() {
+    window.location.href = 'poby.html';
+  });
+</script>
